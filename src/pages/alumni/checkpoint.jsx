@@ -86,8 +86,8 @@ const AlumniSlider = () => {
                         style={{ zIndex: 1 }}
                     >
                         <div className='text-3xl mb-4 font-bold'>Class of {alumni[previousIndex].class}</div>
-                        <div className='text-xl mb-2'>Session: {alumni[previousIndex].batch}</div>
-                        <div className='text-xl mb-2'>Total Students Graduated: {alumni[previousIndex].totalStudents}</div>
+                        <div className='text-xl mb-2'>Batch: {alumni[previousIndex].batch}</div>
+                        <div className='text-xl mb-2'>Students Graduated: {alumni[previousIndex].totalStudents}</div>
                     </div>
 
                     {/* Center card (current checkpoint) */}
@@ -96,8 +96,8 @@ const AlumniSlider = () => {
                         style={{ zIndex: 2 }}
                     >
                         <div className='text-3xl mb-4 font-bold'>Class of {alumni[currentIndex].class}</div>
-                        <div className='text-xl mb-2'>Session: {alumni[currentIndex].batch}</div>
-                        <div className='text-xl mb-2'>Total Students Graduated: {alumni[currentIndex].totalStudents}</div>
+                        <div className='text-xl mb-2'>Batch: {alumni[currentIndex].batch}</div>
+                        <div className='text-xl mb-2'>Students Graduated: {alumni[currentIndex].totalStudents}</div>
                     </div>
 
                     {/* Right card (next checkpoint) */}
@@ -106,8 +106,8 @@ const AlumniSlider = () => {
                         style={{ zIndex: 1 }}
                     >
                         <div className='text-3xl mb-4 font-bold'>Class of {alumni[nextIndex].class}</div>
-                        <div className='text-xl mb-2'>Session: {alumni[nextIndex].batch}</div>
-                        <div className='text-xl mb-2'>Total Students Graduated: {alumni[nextIndex].totalStudents}</div>
+                        <div className='text-xl mb-2'>Batch: {alumni[nextIndex].batch}</div>
+                        <div className='text-xl mb-2'>Students Graduated: {alumni[nextIndex].totalStudents}</div>
                     </div>
                 </div>
             </div>
