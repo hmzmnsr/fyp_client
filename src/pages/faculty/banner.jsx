@@ -25,7 +25,7 @@ const FacultyBanner = () => {
           className="w-full h-screen object-cover"
         />
         <div
-          className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"
+          className="absolute inset-0 bg-gradient-to-r from-black/90 to-transparent"
         ></div>
 
         {/* Text content on the left side */}

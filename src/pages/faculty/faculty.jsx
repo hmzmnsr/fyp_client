@@ -2,6 +2,7 @@ import React from 'react';
 import FacultyBanner from "./banner";
 import FacultyDean from './dean';
 import FacultyTeacher from './teacher';
+import FacultyPopup from './popup';
 
 const Faculty = () => {
     return(
@@ -9,6 +10,7 @@ const Faculty = () => {
             <FacultyBanner/>
             <FacultyDean/>
             <FacultyTeacher/>
+            <FacultyPopup/>
         </div>
     )
 }

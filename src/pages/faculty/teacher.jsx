@@ -27,17 +27,20 @@ const FacultyTeacher = () => {
                 The faculty at the University of South Asia comprises people who are among the best teachers and researchers in their fields. This world-class faculty is instrumental in fostering academic, research, and innovation strengths in students.
             </div>
 
-            <div className="grid grid-cols-4 gap-8">
+            <div className="grid grid-cols-4 gap-8 py-5">
                 {faculties?.map((faculty) => (
-                    <div key={faculty._id} className="flex justify-center items-center flex-col py-10 px-10 bg-gray-200">
-                        <img 
-                            src={faculty.image ? `http://localhost:8001/uploads/${faculty.image.split('/').pop()}` : 'defaultImagePath'} 
-                            alt={faculty.name} 
-                            className="w-4/6 h-56 object-cover rounded-full mb-6" 
+                    <div
+                        key={faculty._id}
+                        className="flex justify-center items-center flex-col py-10 px-10 mt-5 bg-gray-200 shadow-lg transition-transform transform hover:shadow-2xl hover:-translate-y-2"
+                    >
+                        <img
+                            src={faculty.image ? `http://localhost:8001/uploads/${faculty.image.split('/').pop()}` : 'defaultImagePath'}
+                            alt={faculty.name}
+                            className="w-4/6 h-56 object-cover rounded-full mb-6"
                         />
                         <div className="text-primary-color text-2xl font-semibold">Name: {faculty.name}</div>
                         <div className="text-primary-color text-xl font-semibold mt-1 mb-6">Position: {faculty.position}</div>
-                        <button className="py-3 px-8 bg-primary-color text-white rounded-full hover:bg-red-600">
+                        <button className="py-3 px-8 bg-primary-color text-white rounded-full hover:bg-red-600 duration-300 ease-in-out">
                             View Profile
                         </button>
                     </div>

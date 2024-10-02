@@ -16,8 +16,10 @@ const Navbar = () => {
       <div className='col-span-1 flex justify-center items-center'><NavLink to="/resources" className={() => "py-3 px-4 text-xl text-white relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[4px] after:bg-secondary-color after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-full hover:after:scale-x-100"}><span>Resources</span></NavLink></div>
       <div className='col-span-1 flex justify-center items-center'><NavLink to="/reachus" className={() => "py-3 px-4 text-xl text-white relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[4px] after:bg-secondary-color after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-full hover:after:scale-x-100"}><span>Reach Us</span></NavLink></div>
       <div className='col-span-1 relative flex justify-center items-center group'>
-        <div className='cursor-pointer text-white text-xl flex justify-center items-center'>Extras</div>
-        <div className='hidden group-hover:block absolute top-16 left-0 bg-white border border-gray-300 rounded-md shadow-lg w-full text-center'>
+        <div className='cursor-pointer text-white text-xl flex justify-center items-center'>
+          Extras
+        </div>
+        <div className='hidden group-hover:block absolute top-16 left-0 bg-white border border-gray-300 rounded-md shadow-lg w-full text-center z-50'>
           <NavLink
             to="/alumni"
             className="text-xl block px-4 py-3 mx-2 text-primary-color relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[4px] after:bg-secondary-color after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-full hover:after:scale-x-100"
@@ -26,7 +28,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             to="/fyp"
-            className="text-xl block px-4 py-3 mx-2 text-primary-color relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[4px] after:bg-secondary-color after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-full hover:after:scale-x-100"
+            className="text-xl block py-3 mx-2 text-primary-color relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[4px] after:bg-secondary-color after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-full hover:after:scale-x-100"
           >
             Fyp Material
           </NavLink>
@@ -43,8 +45,8 @@ const Navbar = () => {
             Downloads
           </NavLink>
         </div>
-
       </div>
+
       <div className='col-span-2 flex justify-center items-center'>
         <a href="https://portal-usa-edu.com/" target="_blank" rel="noopener noreferrer" className='px-10 py-4 bg-secondary-color hover:bg-red-700 text-white rounded-2xl transition duration-300 ease-in-out'>
           Portal

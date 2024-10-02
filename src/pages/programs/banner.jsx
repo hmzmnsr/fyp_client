@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from "react";
-import alumnibanner from "../../assets/alumni/alumnifade.webp";
+import programsbanner from "../../assets/programs/banner.webp";
 
-const AlumniBanner = () => {
+const ProgramsBanner = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -20,8 +20,8 @@ const AlumniBanner = () => {
       {/* Image with fade effect and overlay */}
       <div className="relative w-full">
         <img
-          src={alumnibanner}
-          alt="alumni"
+          src={programsbanner}
+          alt="faculty"
           className="w-full h-screen object-cover"
         />
         <div
@@ -32,7 +32,7 @@ const AlumniBanner = () => {
         <div className="absolute inset-0 flex justify-start items-center pr-10 z-10 h-screen ml-40">
           <div className="text-center bg-primary-color w-28 h-3/6">
             <div className="text-8xl text-white font-semibold py-4 px-6">
-              Computer Science Department's Alumni
+              Computer Science Department's Programs
             </div>
             <div className="text-6xl text-white font-semibold mt-5 py-4 px-6"> 
             </div>
@@ -43,4 +43,4 @@ const AlumniBanner = () => {
   );
 };
 
-export default AlumniBanner;
+export default ProgramsBanner;
