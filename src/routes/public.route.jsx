@@ -24,7 +24,7 @@ const PublicRoutes = () => {
           <Route path="/events" element = {<Events/>} />
           <Route path="/downloads" element = {<Download/>} />
           <Route path="/alumni" element = {<Alumni/>} />
-          <Route path="/album/:albumName" element={<ImagesView />} /> {/* Dynamic album view */}
+          <Route path="/album/:albumName" element={<ImagesView />} />
         </Routes>
     )
 }

@@ -1,24 +1,24 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchAlbums } from '../../redux/actions/gallery.action.jsx'; // Fetch albums action
-import { useNavigate } from 'react-router-dom'; // For navigation
+import { fetchAlbums } from '../../redux/actions/gallery.action.jsx';
+import { useNavigate } from 'react-router-dom';
 
 const GalleryImages = () => {
     const dispatch = useDispatch();
-    const albums = useSelector((state) => state.gallery.albums || []); // Get albums from state
+    const albums = useSelector((state) => state.gallery.albums || []);
     const navigate = useNavigate();
 
     useEffect(() => {
-        dispatch(fetchAlbums()); // Fetch albums on component mount
+        dispatch(fetchAlbums());
     }, [dispatch]);
 
     const handleViewMore = (albumName) => {
-        navigate(`/album/${albumName}`); // Navigate to the album view
+        navigate(`/album/${albumName}`);
     };
 
     return (
-        <div className="mx-20 px-10 py-10">
-            <div className="text-primary-color text-4xl font-bold text-center">
+        <div className="mx-20 px-10">
+            <div className="text-primary-color text-4xl font-bold text-center mb-20">
                 Recent Highlights Captured
             </div>
             <div className="grid grid-cols-12 my-10">

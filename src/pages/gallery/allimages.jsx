@@ -1,24 +1,33 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom'; // To access albumName from the URL
-import { fetchAlbums } from '../../redux/actions/gallery.action.jsx'; // Fetch albums action
+import { useParams } from 'react-router-dom';
+import { fetchAlbums } from '../../redux/actions/gallery.action.jsx';
+import 'yet-another-react-lightbox/styles.css';
+import Lightbox from 'yet-another-react-lightbox';
 
 const ImagesView = () => {
     const dispatch = useDispatch();
-    const { albumName } = useParams(); // Get albumName from the URL
-    const albums = useSelector((state) => state.gallery.albums || []); // Get albums from the Redux store
+    const { albumName } = useParams();
+    const albums = useSelector((state) => state.gallery.albums || []);
     const [album, setAlbum] = useState(null);
+    const [open, setOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
 
     useEffect(() => {
-        dispatch(fetchAlbums()); // Fetch albums on component mount
+        dispatch(fetchAlbums());
     }, [dispatch]);
 
     useEffect(() => {
         if (albums.length > 0) {
-            const foundAlbum = albums.find((album) => album.name === albumName); // Find album by name
+            const foundAlbum = albums.find((album) => album.name === albumName);
             setAlbum(foundAlbum);
         }
     }, [albums, albumName]);
+
+    const handleImageClick = (image) => {
+        setSelectedImage(`http://localhost:8001/uploads/${image.replace(/\\/g, '/')}`);
+        setOpen(true);
+    };
 
     return (
         <div className="mx-20 px-10 py-10">
@@ -31,17 +40,24 @@ const ImagesView = () => {
                         {album.images && album.images.length > 0 ? (
                             album.images.map((image, index) => (
                                 <div key={index} className="col-span-3 mx-2">
-                                    <img
-                                        src={`http://localhost:8001/uploads/${image.split('\\').pop()}`}
-                                        alt={`Image ${index + 1}`}
-                                        className="w-full object-cover"
-                                    />
+                                    <div className="image-container">
+                                        <img
+                                            src={`http://localhost:8001/uploads/${image.replace(/\\/g, '/')}`}
+                                            alt=""
+                                            className="w-full object-cover cursor-pointer"
+                                            onClick={() => handleImageClick(image)}
+                                        />
+                                    </div>
                                 </div>
                             ))
                         ) : (
                             <div className="col-span-12 text-center">No images found in this album</div>
                         )}
                     </div>
+
+                    {selectedImage && (
+                        <Lightbox open={open} close={() => setOpen(false)} slides={[{ src: selectedImage }]} />
+                    )}
                 </>
             ) : (
                 <div className="text-center text-xl">Loading album details...</div>
