@@ -27,12 +27,6 @@ const Navbar = () => {
             Alumni
           </NavLink>
           <NavLink
-            to="/fyp"
-            className="text-xl block py-3 mx-2 text-primary-color relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[4px] after:bg-secondary-color after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-full hover:after:scale-x-100"
-          >
-            Fyp Material
-          </NavLink>
-          <NavLink
             to="/gallery"
             className="text-xl block px-4 py-3 mx-2 text-primary-color relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[4px] after:bg-secondary-color after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-full hover:after:scale-x-100"
           >

@@ -1,8 +1,13 @@
 import React from 'react';
+import DownloadBanner from './banner';
+import DocsOne from './docsone';
 
 const Download = () => {
     return (
-        <div></div>
+        <div>
+            <DownloadBanner/>
+            <DocsOne/>
+        </div>
     )
 }
 
