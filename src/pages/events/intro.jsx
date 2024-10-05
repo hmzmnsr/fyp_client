@@ -6,7 +6,7 @@ import event4 from "../../assets/events/event4.webp";
 
 const EventIntro = () => {
     return(
-        <div className=" my-10">
+        <div className=" my-28">
             <div className="grid grid-cols-12 mx-20">
                 <div className="col-span-5 flex justify-center items-center shadow-2xl shadow-primary-color"><img src={event1} alt="event" className="object-cover w-full"/></div>
                 <div className="col-span-7 px-16 flex text-center items-center justify-center flex-col">

@@ -1,9 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
-import event from "../../assets/events/events.png";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchEvent } from "../../redux/actions/event.action";
+import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import './dots.css';
 
 const PreviousArrow = (props) => {
@@ -27,7 +28,7 @@ const PreviousArrow = (props) => {
 const NextArrow = (props) => {
     const { className, style, onClick } = props;
     return (
-        <MdArrowForwardIos 
+        <MdArrowForwardIos
             className={className}
             style={{
                 ...style,
@@ -46,6 +47,17 @@ const EventsLatest = () => {
     const sliderRef = useRef(null);
     const [currentSlide, setCurrentSlide] = useState(0);
 
+    const dispatch = useDispatch();
+    const { events = [], loading } = useSelector((state) => state.event || {});
+
+    useEffect(() => {
+        dispatch(fetchEvent());
+    }, [dispatch]);
+
+    const latestEvents = [...events]
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .slice(0, 10);
+
     const settings = {
         dots: false,
         infinite: true,
@@ -53,7 +65,7 @@ const EventsLatest = () => {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
         centerMode: true,
         centerPadding: "30px",
         nextArrow: <NextArrow />,
@@ -79,7 +91,7 @@ const EventsLatest = () => {
         ]
     };
 
-    const totalDots = 7;
+    const totalDots = latestEvents.length || 7;
     const dots = Array.from({ length: totalDots }, (_, index) => (
         <button
             key={index}
@@ -92,22 +104,41 @@ const EventsLatest = () => {
         />
     ));
 
+    const formatDate = (dateString) => {
+        const options = {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+            hour12: true,
+        };
+        return new Date(dateString).toLocaleString(undefined, options);
+    };
+
     return (
-        <div className="mx-20 py-20 px-20 my-10 bg-primary-color">
-            <div className="text-5xl text-white font-bold flex justify-center items-center mb-12">Latest Events</div>
-            <Slider ref={sliderRef} {...settings}>
-                {[1, 2, 3, 4].map((item, index) => (
-                    <div key={index} className="px-4 py-10">
-                        <img src={event} alt="event" />
-                        <div className="py-5 text-center bg-secondary-color">
-                            <div className="text-white text-lg leading-9">Event: Green Day</div>
-                            <div className="text-white text-lg leading-9">Venue: Ideas Lab</div>
-                            <div className="text-white text-lg leading-9">Date: 02:23:32 04:50pm</div>
+        <div className="mx-20 py-20 px-20 my-20 bg-primary-color">
+            <div className="text-5xl text-white font-semibold flex justify-center items-center mb-12">Latest Events</div>
+            {loading ? (
+                <div className="text-white text-center">Loading events...</div>
+            ) : (
+                <Slider ref={sliderRef} {...settings}>
+                    {latestEvents.map((event, index) => (
+                        <div key={index} className="px-4 py-10">
+                            <img
+                                src={`http://localhost:8001/uploads/${event.image.split('\\').pop()}`}
+                                alt={event.name}
+                                className="w-full h-64 object-cover mx-auto"
+                            />
+                            <div className="py-5 text-center bg-secondary-color">
+                                <div className="text-white text-lg leading-9">Event: {event.name}</div>
+                                <div className="text-white text-lg leading-9">Venue: {event.venue}</div>
+                                <div className="text-white text-lg leading-9">Date: {formatDate(event.date)}</div>
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </Slider>
-            {/* Custom Dots */}
+                    ))}
+                </Slider>
+            )}
             <div className="flex justify-center mt-4">
                 {dots}
             </div>

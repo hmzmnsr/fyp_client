@@ -33,7 +33,6 @@ const EventBanner = () => {
               <div className="text-8xl text-white font-semibold py-4 px-6">
                 Computer Science Department's Events
               </div>
-              <div className="text-6xl text-white font-semibold mt-5 py-4 px-6"></div>
             </div>
           </div>
         </div>
