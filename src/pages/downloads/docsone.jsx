@@ -3,7 +3,7 @@ import React from "react";
 const DocsOne = () => {
     return (
         <div className="mx-20 my-2 px-10 py-10">
-            <div className="font-bold text-4xl text-primary-color my-5">Fyp Material</div>
+            <div className="font-bold text-4xl text-primary-color my-5 border-b-4 border-primary-color pb-4">Fyp Material</div>
             <div className="grid grid-cols-12 gap-4 py-5">
                 {[
                     { title: "FYP Final Document Format", link: "https://www.facebook.com/download/preview/795527857632841/" },
