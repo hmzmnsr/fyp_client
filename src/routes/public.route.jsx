@@ -9,6 +9,7 @@ import Faculty from "../pages/faculty/faculty";
 import Events from "../pages/events/events";
 import Download from "../pages/downloads/download";
 import Alumni from "../pages/alumni/alumni";
+import ImagesView from "../pages/gallery/allimages";
 
 const PublicRoutes = () => {
     return(
@@ -23,6 +24,7 @@ const PublicRoutes = () => {
           <Route path="/events" element = {<Events/>} />
           <Route path="/downloads" element = {<Download/>} />
           <Route path="/alumni" element = {<Alumni/>} />
+          <Route path="/album/:albumName" element={<ImagesView />} /> {/* Dynamic album view */}
         </Routes>
     )
 }
