@@ -1,0 +1,15 @@
+/* Dots Styling */
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: white; /* Inactive dot color */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: red; /* Active dot color */
+}
