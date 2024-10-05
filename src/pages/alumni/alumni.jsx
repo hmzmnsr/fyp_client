@@ -10,7 +10,7 @@ const Alumni = () => {
   
 
     return (
-        <div>
+        <div className="mb-40">
             <AlumniBanner />
             <AlumniWelcome />
             <AlumniVision />

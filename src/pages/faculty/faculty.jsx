@@ -6,7 +6,7 @@ import FacultyPopup from './popup';
 
 const Faculty = () => {
     return(
-        <div>
+        <div className="mb-40">
             <FacultyBanner/>
             <FacultyDean/>
             <FacultyTeacher/>

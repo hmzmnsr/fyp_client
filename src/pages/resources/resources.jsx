@@ -5,7 +5,7 @@ import ResourcesImages from "./images";
 
 const Resources = () => {
     return(
-        <div>
+        <div className="mb-40">
             <ResourcesBanner />
             <ResourcesIntro />
             <ResourcesImages />

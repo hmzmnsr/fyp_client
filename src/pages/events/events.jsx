@@ -6,7 +6,7 @@ import EventHeading from './heading';
 
 const Events = () => {
     return(
-        <div>
+        <div className="mb-40">
             <EventBanner/>
             <EventHeading/>
             <EventsLatest />

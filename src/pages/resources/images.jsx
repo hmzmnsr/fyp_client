@@ -9,7 +9,7 @@ import rs6 from "../../assets/resources/rs6.webp";
 const ResourcesImages = () => {
     return (
         <div className="mx-20">
-            <div className="grid grid-cols-12 my-10">
+            <div className="grid grid-cols-12">
                 <div className="col-span-6 mx-4 flex flex-col items-center">
                     <img src={rs1} alt="rs1" className="w-full h-4/6 object-cover shadow-2xl shadow-gray-800" />
                     <div className="text-primary-color text-xl py-5 px-10 leading-9 bg-gray-200">

@@ -6,7 +6,7 @@ import BSCS from "./bscs";
 
 const Programs = () => {
     return(
-        <div>
+        <div className="mb-40">
             <ProgramsBanner/>
             <ProgramInfo />
             <AllPrograms />
