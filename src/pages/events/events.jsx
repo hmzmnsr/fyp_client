@@ -3,6 +3,7 @@ import EventBanner from './banner';
 import EventIntro from './intro';
 import EventsLatest from './latest';
 import EventHeading from './heading';
+import FollowUs from '../../components/common/follow';
 
 const Events = () => {
     return(
@@ -11,6 +12,7 @@ const Events = () => {
             <EventHeading/>
             <EventsLatest />
             <EventIntro/>
+            <FollowUs />
         </div>
     )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import GalleryBanner from './banner';
 import GalleryIntro from './intro';
 import GalleryImages from './imagesarea';
+import FollowUs from '../../components/common/follow';
 
 const Gallery = () => {
     return (
@@ -9,6 +10,7 @@ const Gallery = () => {
             <GalleryBanner />
             <GalleryIntro />
             <GalleryImages />
+            <FollowUs />
         </div>
     )
 }
