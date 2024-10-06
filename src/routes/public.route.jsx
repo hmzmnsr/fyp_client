@@ -10,6 +10,7 @@ import Events from "../pages/events/events";
 import Download from "../pages/downloads/download";
 import Alumni from "../pages/alumni/alumni";
 import ImagesView from "../pages/gallery/allimages";
+import FacultyProfile from "../pages/faculty/popup";
 
 const PublicRoutes = () => {
     return(
@@ -21,6 +22,7 @@ const PublicRoutes = () => {
           <Route path="/gallery" element = {<Gallery/>} />
           <Route path="/fyp" element = {<Fyp/>} />
           <Route path="/faculty" element = {<Faculty/>} />
+          <Route path="/faculty/:id" element={<FacultyProfile />} />
           <Route path="/events" element = {<Events/>} />
           <Route path="/downloads" element = {<Download/>} />
           <Route path="/alumni" element = {<Alumni/>} />

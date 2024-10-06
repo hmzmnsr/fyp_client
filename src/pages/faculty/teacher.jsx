@@ -1,14 +1,20 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchFaculty } from "../../redux/actions/faculty.action";
+import { useNavigate } from "react-router-dom";
 
 const FacultyTeacher = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const { faculties, loading, error } = useSelector((state) => state.faculty);
 
     useEffect(() => {
         dispatch(fetchFaculty());
     }, [dispatch]);
+
+    const handleViewProfile = (faculty) => {
+        navigate(`/faculty/${faculty._id}`, { state: { faculty } });
+    };
 
     if (loading) {
         return <div>Loading...</div>;
@@ -40,7 +46,10 @@ const FacultyTeacher = () => {
                         />
                         <div className="text-primary-color text-2xl font-semibold">Name: {faculty.name}</div>
                         <div className="text-primary-color text-xl font-semibold mt-1 mb-6">Position: {faculty.position}</div>
-                        <button className="py-3 px-8 bg-primary-color text-white rounded-full hover:bg-red-600 duration-300 ease-in-out">
+                        <button
+                            className="py-3 px-8 bg-primary-color text-white rounded-full hover:bg-red-600 duration-300 ease-in-out"
+                            onClick={() => handleViewProfile(faculty)}
+                        >
                             View Profile
                         </button>
                     </div>
