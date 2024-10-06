@@ -15,7 +15,7 @@ const FacultyProfile = () => {
     return (
         <div className="mb-40">
             <div className="mx-20 mt-10 px-24">
-                <div className="text-primary-color text-4xl font-bold text-center mb-6">Meet Our Faculty - Department of Computer Science, University of South Asia</div>
+                <div className="text-primary-color text-4xl font-bold text-center my-20">Meet Our Faculty - Department of Computer Science, University of South Asia</div>
             </div>
             <div className="grid grid-cols-12 bg-gray-200 py-10 my-10 mx-40">
                 <div className="col-span-4 flex justify-center items-center px-6 py-6">
