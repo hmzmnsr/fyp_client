@@ -54,7 +54,7 @@ const BSCS = () => {
     };
 
     return (
-        <div className="my-5 mx-20 px-2">
+        <div className="my-5 mx-8 px-2">
             {/* Program Info */}
             <div className="grid grid-cols-12 py-5">
                 <div className="col-span-4">
