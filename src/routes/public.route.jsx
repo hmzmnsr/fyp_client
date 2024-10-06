@@ -13,6 +13,8 @@ import ImagesView from "../pages/gallery/allimages";
 import FacultyProfile from "../pages/faculty/popup";
 import BSCS from "../pages/programs/bscs";
 import BSCSRoadmap from "../pages/programs/bscsroadmap";
+import BSSE from "../pages/programs/bsse";
+import BSSERoadmap from "../pages/programs/bsseroadmap";
 
 const PublicRoutes = () => {
     return(
@@ -30,7 +32,9 @@ const PublicRoutes = () => {
           <Route path="/alumni" element={<Alumni />} />
           <Route path="/album/:albumName" element={<ImagesView />} />
           <Route path="/bscs" element={<BSCS />} />
-          <Route path="/roadmap/:termYear" element={<BSCSRoadmap />} />
+          <Route path="/roadmap/bscs/:termYear" element={<BSCSRoadmap />} />
+          <Route path="/bsse" element={<BSSE />} />
+          <Route path="/roadmap/bsse/:termYear" element={<BSSERoadmap />} />
         </Routes>
     )
 }

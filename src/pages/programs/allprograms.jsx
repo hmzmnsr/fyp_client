@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import BSCS from "./bscs";
+import BSSE from "./bsse";
 
 const AllPrograms = () => {
-
     const [selectedProgram, setSelectedProgram] = useState("bscs");
 
     const handleProgramClick = (program) => {
@@ -14,7 +14,7 @@ const AllPrograms = () => {
             case "bscs":
                 return <BSCS />;
             case "softwareEngineering":
-                return <div>Software Engineering Content</div>;
+                return <BSSE />;
             case "associateCS":
                 return <div>Associate Degree in Computer Science Content</div>;
             case "mastersCS":
@@ -29,7 +29,6 @@ const AllPrograms = () => {
     return (
         <div className="my-5 px-10">
             <div className="flex justify-center">
-          
                 <button
                     onClick={() => handleProgramClick("bscs")}
                     className={`text-xl text-white px-5 py-4 mx-4 transition duration-300 ease-in-out ${
@@ -39,9 +38,9 @@ const AllPrograms = () => {
                     Bachelors in Computer Science
                 </button>
                 <button
-                    onClick={() => handleProgramClick("softwareEngineering")}
+                    onClick={() => handleProgramClick("softwareEngineering")} // Corrected to "softwareEngineering"
                     className={`text-xl text-white px-5 py-4 mx-4 transition duration-300 ease-in-out ${
-                        selectedProgram === "softwareEngineering" ? "bg-red-600" : "bg-primary-color hover:bg-red-600"
+                        selectedProgram === "softwareEngineering" ? "bg-red-600" : "bg-primary-color hover:bg-red-600" // Corrected condition
                     }`}
                 >
                     Bachelors in Software Engineering

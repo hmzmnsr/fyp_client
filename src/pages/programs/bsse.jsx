@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { fetchAllBSCS } from "../../redux/actions/bscs.action";
+import { fetchAllBSSE } from "../../redux/actions/bsse.action";
 import { useNavigate, useParams } from 'react-router-dom';
 
-const BSCS = () => {
+const BSSE = () => {
     useParams();
     const dispatch = useDispatch();
     const [roadmap, setRoadmap] = useState({});
@@ -13,8 +13,8 @@ const BSCS = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await dispatch(fetchAllBSCS());
-                if (response.type === 'bscs/fetchAll/fulfilled') {
+                const response = await dispatch(fetchAllBSSE());
+                if (response.type === 'bsse/fetchAll/fulfilled') {
                     const roadmapData = response.payload.reduce((acc, entry) => {
                         const key = `${entry.term} ${entry.year}`;
                         if (!acc[key]) acc[key] = entry._id;
@@ -33,7 +33,7 @@ const BSCS = () => {
     }, [dispatch]);
 
     const handleRoadmapClick = (termYear) => {
-        navigate(`/roadmap/bscs/${termYear}`);
+        navigate(`/roadmap/bsse/${termYear}`);
     };
 
     const renderButtons = () => {
@@ -59,10 +59,10 @@ const BSCS = () => {
             {/* Program Info */}
             <div className="grid grid-cols-12 py-5">
                 <div className="col-span-4">
-                    <div className="text-2xl font-semibold text-primary-color border-b-4 border-primary-color pb-2 mr-40 ml-2">Bachelors in Computer Science</div>
+                    <div className="text-2xl font-semibold text-primary-color border-b-4 border-primary-color pb-2 mr-40 ml-2">Bachelors in Software Engineering</div>
                 </div>
                 <div className="col-span-8 text-xl text-primary-color leading-9 pl-3">
-                    University of South Asia has been offering Bachelor of Science (BS) program in Computer Science since 2005. 
+                    University of South Asia has been offering Bachelor of Science (BS) program in Software Engineering since 2005. 
                     The prime focus of the program is to equip the students in the field of Computer Science so that they could grasp the in-built technicalities and complexities of computer and its related contemporary issues.
                     The curriculum is based on the recommendations of the National Curriculum Revision Committees approved by the Higher Education Commission (HEC), Islamabad. 
                     However, the University may update the curricula from time to time with the approval of designated bodies. 
@@ -117,4 +117,4 @@ const BSCS = () => {
     );
 };
 
-export default BSCS;
+export default BSSE;
