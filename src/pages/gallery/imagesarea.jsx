@@ -43,7 +43,7 @@ const GalleryImages = () => {
                                 Album Name: {album.name}
                             </div>
                             <button
-                                className="text-white bg-primary-color py-2 px-6 my-2"
+                                className="text-white bg-primary-color py-2 px-6 my-2 hover:bg-red-700 transition duration-300 ease-in-out"
                                 onClick={() => handleViewMore(album.name)}
                             >
                                 View More
