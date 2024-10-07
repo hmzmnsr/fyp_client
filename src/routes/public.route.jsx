@@ -15,6 +15,8 @@ import BSCS from "../pages/programs/bscs";
 import BSCSRoadmap from "../pages/programs/bscsroadmap";
 import BSSE from "../pages/programs/bsse";
 import BSSERoadmap from "../pages/programs/bsseroadmap";
+import MSCS from "../pages/programs/mscs";
+import MSCSRoadmap from "../pages/programs/mscsroadmap";
 
 const PublicRoutes = () => {
     return(
@@ -35,6 +37,8 @@ const PublicRoutes = () => {
           <Route path="/roadmap/bscs/:termYear" element={<BSCSRoadmap />} />
           <Route path="/bsse" element={<BSSE />} />
           <Route path="/roadmap/bsse/:termYear" element={<BSSERoadmap />} />
+          <Route path="/mscs" element={<MSCS />} />
+          <Route path="/roadmap/mscs/:termYear" element={<MSCSRoadmap />} />
         </Routes>
     )
 }
