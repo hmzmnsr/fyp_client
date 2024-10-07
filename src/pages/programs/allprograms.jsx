@@ -3,6 +3,7 @@ import BSCS from "./bscs";
 import BSSE from "./bsse";
 import MSCS from "./mscs";
 import ADPCS from "./adpcs";
+import PHDCS from "./phdcs";
 
 const AllPrograms = () => {
     const [selectedProgram, setSelectedProgram] = useState("bscs");
@@ -22,7 +23,7 @@ const AllPrograms = () => {
             case "mastersCS":
                 return <MSCS />;
             case "phdCS":
-                return <div>PHD in Computer Science Content</div>;
+                return <PHDCS />;
             default:
                 return <div>Please select a program to see details.</div>;
         }
@@ -40,9 +41,9 @@ const AllPrograms = () => {
                     Bachelors in Computer Science
                 </button>
                 <button
-                    onClick={() => handleProgramClick("softwareEngineering")} // Corrected to "softwareEngineering"
+                    onClick={() => handleProgramClick("softwareEngineering")}
                     className={`text-xl text-white px-5 py-4 mx-4 transition duration-300 ease-in-out ${
-                        selectedProgram === "softwareEngineering" ? "bg-red-600" : "bg-primary-color hover:bg-red-600" // Corrected condition
+                        selectedProgram === "softwareEngineering" ? "bg-red-600" : "bg-primary-color hover:bg-red-600"
                     }`}
                 >
                     Bachelors in Software Engineering

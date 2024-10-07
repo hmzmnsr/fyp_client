@@ -19,6 +19,8 @@ import MSCS from "../pages/programs/mscs";
 import MSCSRoadmap from "../pages/programs/mscsroadmap";
 import ADPCS from "../pages/programs/adpcs";
 import ADPCSRoadmap from "../pages/programs/adpcsroadmap";
+import PHDCS from "../pages/programs/phdcs";
+import PHDCSRoadmap from "../pages/programs/phdcsroadmap";
 
 const PublicRoutes = () => {
     return(
@@ -41,8 +43,10 @@ const PublicRoutes = () => {
           <Route path="/roadmap/bsse/:termYear" element={<BSSERoadmap />} />
           <Route path="/mscs" element={<MSCS />} />
           <Route path="/roadmap/mscs/:termYear" element={<MSCSRoadmap />} />
-          <Route path="/mscs" element={<ADPCS />} />
-          <Route path="/roadmap/mscs/:termYear" element={<ADPCSRoadmap />} />
+          <Route path="/adpcs" element={<ADPCS />} />
+          <Route path="/roadmap/adpcs/:termYear" element={<ADPCSRoadmap />} />
+          <Route path="/phdcs" element={<PHDCS />} />
+          <Route path="/roadmap/phdcs/:termYear" element={<PHDCSRoadmap />} />
         </Routes>
     )
 }
