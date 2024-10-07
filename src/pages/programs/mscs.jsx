@@ -61,13 +61,7 @@ const MSCS = () => {
                 <div className="col-span-4">
                     <div className="text-2xl font-semibold text-primary-color border-b-4 border-primary-color pb-2 mr-40 ml-2">Masters in Computer Science</div>
                 </div>
-                <div className="col-span-8 text-xl text-primary-color leading-9 pl-3">
-                    University of South Asia has been offering Master of Science (MS) program in Computer Science since 2005. 
-                    The prime focus of the program is to equip the students in the field of Computer Science so that they could grasp the in-built technicalities and complexities of computer and its related contemporary issues.
-                    The curriculum is based on the recommendations of the National Curriculum Revision Committees approved by the Higher Education Commission (HEC), Islamabad. 
-                    However, the University may update the curricula from time to time with the approval of designated bodies. 
-                    During the final year, students will be required to spend a good deal of time in completing a project. This project will usually be done in collaboration with industry, under the guidance of the professionals nominated by the University.
-                </div>
+                <div className="col-span-8 text-xl text-primary-color leading-9 pl-3">The Master of Science in Computer Science (MSCS) program at the University of South Asia equips students with advanced knowledge and skills in computer science, fostering critical thinking and professional intuition essential for leadership roles in the field. The program curriculum is meticulously designed to offer a blend of theoretical insights and practical experiences, enabling graduates to make informed and impactful decisions in their professional careers. The MSCS program aligns closely with both the departmental and university mission statements, emphasizing innovation, interdisciplinary collaboration, and ethical responsibility.</div>
             </div>
 
             {/* Eligibility */}
@@ -76,8 +70,12 @@ const MSCS = () => {
                     <div className="text-2xl font-semibold text-primary-color border-b-4 border-primary-color pb-2 mr-40 ml-2">Eligibility</div>
                 </div>
                 <div className="col-span-8 pl-3">
-                    <div className="text-xl text-primary-color leading-9">Intermediate or equivalent with 50% marks. USA admission test or equivalent.</div>
-                    <div className="text-xl text-primary-color leading-9 font-bold">Note: Students awaiting Inter part II results shall apply on the basis of Inter part I</div>
+                    <div className="text-xl text-primary-color leading-9">BS (IT/CS/SE) 4 years degree program (minimum 130 Cr. Hrs. with minimum 2.0 CGPA on scale 4.0 or least 60% marks (Annual System)</div>
+                    <div className="text-xl text-primary-color leading-9 font-bold">OR</div>
+                    <div className="text-xl text-primary-color leading-9">Computer Science conversion course two years degree program referred to as MCS or M.Sc. (CS) or M. Sc (IT), (minimum 2.0 CGPA of scale 4.0 or equivalent, or least 60% marks (Annual System)</div>
+                    <div className="text-xl text-primary-color leading-9 font-bold">OR</div>
+                    <div className="text-xl text-primary-color leading-9">16-years education engineering degree in computing. Under eligibility criterion 4, candidates will be required to complete the deficiency coursework prior to the MSCS coursework to ensure the pre-requisite competency in CS. The deficiency/transition coursework will be determined on the basis of the core CS courses of the BSCS degree.</div>
+                    <div className="text-xl text-primary-color leading-9 font-bold">GAT or University admission test with 50% marks.</div>
                 </div>
             </div>
 
@@ -87,18 +85,7 @@ const MSCS = () => {
                     <div className="text-2xl font-semibold text-primary-color border-b-4 border-primary-color pb-2 mr-40 ml-2">Fees Structure</div>
                 </div>
                 <div className="col-span-8 pl-3">
-                    <div className="text-xl text-primary-color">Application and Registration Fees: RS. 30,000</div>
                     <div className="text-xl text-primary-color">Per Semester Fees: RS. 180,000</div>
-                </div>
-            </div>
-
-            {/* Degree Completion Requirement */}
-            <div className="grid grid-cols-12 py-5">
-                <div className="col-span-4">
-                    <div className="text-2xl font-semibold text-primary-color border-b-4 border-primary-color pb-2 mr-40 ml-2">Degree Completion Requirement</div>
-                </div>
-                <div className="col-span-8 text-xl text-primary-color pl-3">
-                    Successful completion of 130 Credit hours (136 for students belonging to Pre-Medical Group) including project with a minimum CGPA of 2.00.
                 </div>
             </div>
 

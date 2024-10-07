@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import "./allprograms.css";
 import BSCS from "./bscs";
 import BSSE from "./bsse";
 import MSCS from "./mscs";
@@ -74,9 +76,17 @@ const AllPrograms = () => {
                 </button>
             </div>
 
-            {/* Render the selected program content */}
+            {/* Render the selected program content with transition */}
             <div className="mt-10">
-                {renderProgramContent()}
+                <TransitionGroup>
+                    <CSSTransition
+                        key={selectedProgram}
+                        timeout={500}
+                        classNames="fade"
+                    >
+                        <div>{renderProgramContent()}</div>
+                    </CSSTransition>
+                </TransitionGroup>
             </div>
         </div>
     );

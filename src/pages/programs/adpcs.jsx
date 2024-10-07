@@ -61,13 +61,7 @@ const ADPCS = () => {
                 <div className="col-span-4">
                     <div className="text-2xl font-semibold text-primary-color border-b-4 border-primary-color pb-2 mr-40 ml-2">Associate Degree in Computer Science</div>
                 </div>
-                <div className="col-span-8 text-xl text-primary-color leading-9 pl-3">
-                    University of South Asia has been offering Associate Degree program in Computer Science since 2005. 
-                    The prime focus of the program is to equip the students in the field of Computer Science so that they could grasp the in-built technicalities and complexities of computer and its related contemporary issues.
-                    The curriculum is based on the recommendations of the National Curriculum Revision Committees approved by the Higher Education Commission (HEC), Islamabad. 
-                    However, the University may update the curricula from time to time with the approval of designated bodies. 
-                    During the final year, students will be required to spend a good deal of time in completing a project. This project will usually be done in collaboration with industry, under the guidance of the professionals nominated by the University.
-                </div>
+                <div className="col-span-8 text-xl text-primary-color leading-9 pl-3">Associate of Computer Science program aims to develop students’ critical professional thinking and intuition. The program’s curriculum provides a balanced mixture of learning experiences to make the graduates capable of sound professional decisions. Associate of Computer Science program objectives are in sync with not only the Department’s mission statement but also the University of South Asia’s mission statement.</div>
             </div>
 
             {/* Eligibility */}
@@ -76,8 +70,9 @@ const ADPCS = () => {
                     <div className="text-2xl font-semibold text-primary-color border-b-4 border-primary-color pb-2 mr-40 ml-2">Eligibility</div>
                 </div>
                 <div className="col-span-8 pl-3">
-                    <div className="text-xl text-primary-color leading-9">Intermediate or equivalent with 50% marks. USA admission test or equivalent.</div>
-                    <div className="text-xl text-primary-color leading-9 font-bold">Note: Students awaiting Inter part II results shall apply on the basis of Inter part I</div>
+                    <div className="text-xl text-primary-color leading-9">Minimum 50% Marks in Intermediate(FSC Pre Medical/Pre Engineering/ICS/DAE ) A-Level or equivalent</div>
+                    <div className="text-xl text-primary-color leading-9 font-bold">Note: No 3rd division in Matriculation</div>
+                    <div className="text-xl text-primary-color leading-9">Minimum 50% marks in admission Test</div>
                 </div>
             </div>
 
@@ -87,18 +82,7 @@ const ADPCS = () => {
                     <div className="text-2xl font-semibold text-primary-color border-b-4 border-primary-color pb-2 mr-40 ml-2">Fees Structure</div>
                 </div>
                 <div className="col-span-8 pl-3">
-                    <div className="text-xl text-primary-color">Application and Registration Fees: RS. 30,000</div>
                     <div className="text-xl text-primary-color">Per Semester Fees: RS. 180,000</div>
-                </div>
-            </div>
-
-            {/* Degree Completion Requirement */}
-            <div className="grid grid-cols-12 py-5">
-                <div className="col-span-4">
-                    <div className="text-2xl font-semibold text-primary-color border-b-4 border-primary-color pb-2 mr-40 ml-2">Degree Completion Requirement</div>
-                </div>
-                <div className="col-span-8 text-xl text-primary-color pl-3">
-                    Successful completion of 130 Credit hours (136 for students belonging to Pre-Medical Group) including project with a minimum CGPA of 2.00.
                 </div>
             </div>
 
