@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import BSCS from "./bscs";
 import BSSE from "./bsse";
 import MSCS from "./mscs";
+import ADPCS from "./adpcs";
 
 const AllPrograms = () => {
     const [selectedProgram, setSelectedProgram] = useState("bscs");
@@ -17,7 +18,7 @@ const AllPrograms = () => {
             case "softwareEngineering":
                 return <BSSE />;
             case "associateCS":
-                return <div>Associate Degree in Computer Science Content</div>;
+                return <ADPCS />;
             case "mastersCS":
                 return <MSCS />;
             case "phdCS":
