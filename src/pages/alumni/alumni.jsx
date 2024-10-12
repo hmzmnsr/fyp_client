@@ -4,6 +4,7 @@ import AlumniWelcome from "./welcome";
 import AlumniVision from "./vision";
 import AlumniSlider from './checkpoint';
 import AlumniConvocation from './convocation';
+import FollowUs from "../../components/common/follow";
 
 
 const Alumni = () => {
@@ -16,6 +17,7 @@ const Alumni = () => {
             <AlumniVision />
             <AlumniSlider />
             <AlumniConvocation />
+            <FollowUs />
         </div>
     );
 };

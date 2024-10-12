@@ -1,8 +1,11 @@
 import React from 'react';
+import Admission from './admission';
 
 const HomePage = () => {
-    return(
-        <div></div>
+    return (
+        <div className='mb-40'>
+            <Admission />
+        </div>
     )
 }
 

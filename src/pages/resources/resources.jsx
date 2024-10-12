@@ -2,6 +2,7 @@ import React from "react";
 import ResourcesBanner from "./banner";
 import ResourcesIntro from "./intro";
 import ResourcesImages from "./images";
+import FollowUs from "../../components/common/follow";
 
 const Resources = () => {
     return(
@@ -9,6 +10,7 @@ const Resources = () => {
             <ResourcesBanner />
             <ResourcesIntro />
             <ResourcesImages />
+            <FollowUs/>
         </div>
     )
 }
