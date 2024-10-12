@@ -2,7 +2,7 @@ import React from "react";
 
 const Admission = () => {
     return (
-        <div className="mx-20 my-10 px-10 py-10 bg-gray-200 drop-shadow-2xl">
+        <div className="mx-20 my-10 px-10 py-10 bg-gray-200">
             <div className="text-4xl flex justify-center items-center font-bold">Admission Procedure</div>
             <div className="text-3xl flex justify-center items-center font-bold my-4">Are you ready to take the next step toward your future?</div>
             <div className="grid grid-cols-12 mt-10">
