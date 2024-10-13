@@ -4,7 +4,7 @@ import scholarshipImage from "../../assets/scholarship/scholarship.webp";
 const Scholarship = () => {
   return (
     <div 
-      className="relative mx-20 my-20 px-10 py-20 bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:opacity-60 before:z-0"
+      className="relative mx-20 my-20 px-10 py-20 bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:opacity-60 before:z-0 transition-transform duration-300 ease-in-out hover:transform hover:scale-105"
       style={{ backgroundImage: `url(${scholarshipImage})` }}
     >
       <div className="relative z-10 grid grid-cols-12">

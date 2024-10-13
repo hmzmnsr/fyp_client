@@ -50,7 +50,7 @@ const PrevArrow = (props) => {
                 color: '#1e90ff',
             }}
         >
-            <IoIosArrowBack />
+            <IoIosArrowBack className='shadow-2xl shadow-primary-color'/>
         </div>
     );
 };
@@ -71,7 +71,7 @@ const NextArrow = (props) => {
                 color: '#1e90ff',
             }}
         >
-            <IoIosArrowForward />
+            <IoIosArrowForward  className='shadow-2xl shadow-primary-color'/>
         </div>
     );
 };
