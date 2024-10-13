@@ -28,7 +28,7 @@ const ProgramsHomepage = () => {
                 });
                 setFade(true);
             }, 300);
-        }, 9000);
+        }, 8000);
 
         return () => clearInterval(interval);
     });
