@@ -79,16 +79,16 @@ const NextArrow = (props) => {
 const Testimonials = () => {
     const testimonials = [
         {
-            name: 'Hamza Mansoor',
-            title: 'Computer Science Graduate',
-            image: s1,
-            quote: 'The learning experience at this institution has been transformative for me. The faculty are not only knowledgeable but also genuinely care about the success of their students. The hands-on projects and collaborative environment have helped me develop practical skills that I will carry into my career. I am grateful for the opportunities to network with industry professionals and for the support I received throughout my studies.',
-        },
-        {
             name: 'Maira Yousaf',
             title: 'Software Engineering Graduate',
             image: s5,
             quote: 'My time at this university has been incredible. The diverse course offerings allowed me to explore various aspects of business, and the professors are always available to provide guidance and support. The real-world case studies and internships helped me apply my knowledge practically, making me feel prepared for the job market. I have made lasting friendships and valuable connections that will benefit me for years to come.',
+        },
+        {
+            name: 'Hamza Mansoor',
+            title: 'Computer Science Graduate',
+            image: s1,
+            quote: 'The learning experience at this institution has been transformative for me. The faculty are not only knowledgeable but also genuinely care about the success of their students. The hands-on projects and collaborative environment have helped me develop practical skills that I will carry into my career. I am grateful for the opportunities to network with industry professionals and for the support I received throughout my studies.',
         },
         {
             name: 'Hira Rasheed',
