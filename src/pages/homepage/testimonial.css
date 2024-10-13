@@ -1,0 +1,19 @@
+.slick-prev, .slick-next {
+    font-size: 30px;
+    color: #1e90ff;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slick-prev {
+    left: -40px; /* Adjust left arrow position */
+}
+
+.slick-next {
+    right: -40px; /* Adjust right arrow position */
+}
+
+.slick-dots li button:before {
+    color: #1e90ff; /* Change dot color */
+}
