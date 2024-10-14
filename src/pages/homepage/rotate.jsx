@@ -20,7 +20,7 @@ const Rotate = () => {
                 <div className="col-span-3 flex flex-col justify-center items-center border-r-2 border-primary-color">
                     <div className="text-9xl text-primary-color mb-4 drop-shadow-2xl"><PiStudent /></div>
                     <div className="text-5xl text-primary-color my-3 mx-5 font-bold">
-                        {inView && <CountUp end={4000} duration={2.5} />}
+                        {inView && <CountUp end={2000} duration={2.5} />}
                         +
                     </div>
                     <div className="text-2xl text-primary-color mx-5 text-center font-bold">GRADUATE STUDENTS</div>

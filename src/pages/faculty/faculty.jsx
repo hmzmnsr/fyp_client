@@ -7,7 +7,7 @@ import FacultyIntro from './intro';
 
 const Faculty = () => {
     return(
-        <div className="mb-40">
+        <div className="mb-40 text-justify">
             <FacultyBanner/>
             <FacultyIntro />
             <FacultyDean/>

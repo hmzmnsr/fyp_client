@@ -11,7 +11,7 @@ const Scholarship = () => {
         <div className="col-span-2 font-bold text-3xl text-primary-color leading-10 bg-gray-200 flex justify-center items-center px-20 py-10">
           Top 04 Best Financial Aid and Scholarships
         </div>
-        <div className="col-span-10 text-bold text-2xl text-white leading-10 px-10 flex justify-center items-center py-10">
+        <div className="col-span-10 text-bold text-2xl text-white leading-10 px-10 flex justify-center items-center py-10 text-justify">
           At the University of South Asia, we are dedicated to providing exceptional Financial Aid and Scholarships to support students at every academic level. Our comprehensive scholarship programs include merit-based awards for undergraduate and master’s students, work-based opportunities, and kinship benefits. By offering up to 100% scholarships for top achievers and tailored aid for various needs, we aim to remove financial barriers and enable students to focus on their education across campuses including Cantt and Raiwind Road.
         </div>
       </div>

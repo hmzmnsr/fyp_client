@@ -7,7 +7,7 @@ import FollowUs from '../../components/common/follow';
 
 const Events = () => {
     return(
-        <div className="mb-40">
+        <div className="mb-40 text-justify">
             <EventBanner/>
             <EventHeading/>
             <EventsLatest />

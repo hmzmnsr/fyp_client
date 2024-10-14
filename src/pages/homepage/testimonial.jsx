@@ -11,7 +11,7 @@ import s2 from "../../assets/testimonial/s2.webp";
 
 const TestimonialCard = ({ testimonial }) => {
     return (
-        <div className="bg-gradient-to-r from-blue-600 to-blue-300 shadow-xl rounded-2xl p-16 transform transition duration-500 hover:scale-105 hover:shadow-2xl mx-8">
+        <div className="bg-gradient-to-r from-blue-600 to-blue-300 shadow-xl rounded-2xl p-16 transform transition duration-500 hover:scale-105 hover:shadow-2xl mx-8 text-justify">
             <div className="flex items-center mb-6">
                 <img
                     className="w-20 h-20 rounded-full border-4 border-white shadow-md"

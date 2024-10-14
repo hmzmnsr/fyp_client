@@ -159,8 +159,8 @@ const ProgramsHomepage = () => {
     };
 
     return (
-        <div className="mx-20 my-10 px-10 py-10">
-            <div className="text-5xl text-primary-color font-bold text-center mb-10">Programs Offered - University of South Asia</div>
+        <div className="mx-20 my-10 px-10 py-10 text-justify">
+            <div className="text-5xl text-primary-color font-bold text-center mb-4">Programs Offered - University of South Asia</div>
             <div className="flex justify-evenly">
                 <div className="mr-10 my-10 bg-gray-200 cursor-pointer" onClick={() => setSelectedProgram("ADPCS")}>
                     <div className={`text-2xl text-primary-color py-10 px-5 text-center ${selectedProgram === "ADPCS" ? "bg-red-800 text-white" : ""}`}>Associate Degree Program in Computer Science (ADPCS)</div>

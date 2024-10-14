@@ -5,7 +5,7 @@ import AllPrograms from './allprograms';
 
 const Programs = () => {
     return(
-        <div className="mb-40">
+        <div className="mb-40 text-justify">
             <ProgramsBanner/>
             <ProgramInfo />
             <AllPrograms />

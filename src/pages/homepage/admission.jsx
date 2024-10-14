@@ -3,7 +3,7 @@ import React from "react";
 const Admission = () => {
     return (
         <div 
-            className="mx-20 my-10 px-10 py-10 transition-transform duration-300 ease-in-out hover:transform hover:scale-105"
+            className="mx-20 my-10 px-10 py-10 transition-transform duration-300 ease-in-out hover:transform hover:scale-105 text-justify"
         >
             <div className="text-4xl flex justify-center items-center font-bold">Admission Procedure</div>
             <div className="text-3xl flex justify-center items-center font-bold my-4">Are you ready to take the next step toward your future?</div>
