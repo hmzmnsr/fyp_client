@@ -44,6 +44,9 @@ const FacultyProfile = () => {
                     <div className="text-primary-color text-lg mt-4">
                         About: {faculty.about || "No additional information available"}
                     </div>
+                    <div className="text-primary-color text-lg mt-4">
+                        Status: {faculty.status || "No additional information available"}
+                    </div>
                 </div>
             </div>
         </div>
