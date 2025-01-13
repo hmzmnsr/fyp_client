@@ -5,7 +5,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 
-const Footer = () => {
+const Footer = () => {  
     return (
         <div className='bg-primary-color'>
             <div className='grid grid-cols-12 mt-10 border-b-2 border-b-red-600 pb-3 mx-20'>
@@ -33,6 +33,8 @@ const Footer = () => {
                         </NavLink>
                     </div>
                 </div>
+
+
                 <div className='col-span-3 mx-16 my-10'>
                     <div className='text-white text-xl font-bold border-b-2 border-b-red-600 pb-3'>Contact Us</div>
                     <div className='text-white text-lg mt-4 leading-8 flex items-center'><MdEmail className='mr-2 text-white' /> admissions@usa.edu.pk</div>
@@ -53,12 +55,15 @@ const Footer = () => {
                             <FaSquareXTwitter className='text-white text-xl mr-5 hover:text-red-600' />
                         </a>
                     </div>
-
                 </div>
+
+
                 <div className='col-span-3 mx-16 my-10'>
                     <div className='text-white text-xl font-bold border-b-2 border-b-red-600 pb-3'>Address</div>
                     <div className='text-white text-lg mt-4 leading-8'>47 Tufail Rd, Saddar Town, Lahore Cantt, Punjab</div>
                 </div>
+
+
             </div>
             <div className='text-white text-lg flex justify-center items-center py-10'>@All rights reserved. Privacy Policy. Terms and Conditions.</div>
         </div>

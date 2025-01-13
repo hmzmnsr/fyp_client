@@ -36,7 +36,7 @@ const FacultyProfile = () => {
                         Qualification: {faculty.qualification || "Qualification not available"}
                     </div>
                     <div className="text-primary-color text-lg mt-4">
-                        Areas of Interest: {faculty.interests ? faculty.interests.join(', ') : "Not available"}
+                    Areas of Interest: {faculty.areaOfInterest ? faculty.areaOfInterest.join(', ') : "Not available"}
                     </div>
                     <div className="text-primary-color text-lg mt-4">
                         Email: {faculty.email || "Email not available"}

@@ -5,7 +5,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 const FollowUs = () => {
     return (
         <div className="mx-16 my-20 py-5 px-10">
-            <div className="grid grid-cols-12 shadow-2xl py-10">
+            <div className="grid grid-cols-12 py-10">
               
                 <div className="col-span-5 text-4xl font-bold flex justify-end items-center text-primary-color">For More Updates Follow Us</div>
                 <div className="col-span-7">

@@ -45,8 +45,8 @@ const FacultyTeacher = () => {
                             className="w-4/6 h-56 object-cover rounded-full mb-6"
                         />
                         <div className="text-primary-color text-2xl font-semibold">Name: {faculty.name}</div>
-                        <div className="text-primary-color text-xl font-semibold mt-1">Position: {faculty.position}</div>
-                        <div className="text-primary-color text-xl font-semibold mt-1 mb-6">Status: {faculty.status}</div>
+                        <div className="text-primary-color text-xl font-semibold mt-1 mb-6">Position: {faculty.position}</div>
+                        {/* <div className="text-primary-color text-xl font-semibold mt-1 mb-6">Status: {faculty.status}</div> */}
                         <button
                             className="py-3 px-8 bg-primary-color text-white rounded-full hover:bg-red-600 duration-300 ease-in-out"
                             onClick={() => handleViewProfile(faculty)}

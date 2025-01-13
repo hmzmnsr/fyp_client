@@ -26,9 +26,9 @@ const DocsTwo = () => {
                     {downloads.map((doc, index) => (
                         <div
                             key={index}
-                            className="col-span-1 bg-gray-200 flex flex-col justify-evenly items-center p-4 h-56 rounded-3xl"
+                            className="col-span-1 bg-gray-200 flex flex-col justify-evenly items-center p-4 h-56"
                         >
-                            <div className="text-xl text-primary-color text-center h-2/3 bg-gray-300 px-2 flex justify-center items-center rounded-3xl w-full">
+                            <div className="text-xl text-primary-color text-center h-2/3 px-2 flex justify-center items-center rounded-3xl w-full">
                                 {doc.documentName}
                             </div>
                             {/* URL path for the attachments */}

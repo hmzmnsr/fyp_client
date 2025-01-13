@@ -11,7 +11,7 @@ const ImagesView = () => {
     const albums = useSelector((state) => state.gallery.albums || []);
     const [album, setAlbum] = useState(null);
     const [open, setOpen] = useState(false);
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [currentIndex, setCurrentIndex] = useState(0); // Track the current image index
 
     useEffect(() => {
         dispatch(fetchAlbums());
@@ -24,10 +24,14 @@ const ImagesView = () => {
         }
     }, [albums, albumName]);
 
-    const handleImageClick = (image) => {
-        setSelectedImage(`http://localhost:8001/uploads/${image.replace(/\\/g, '/')}`);
+    const handleImageClick = (index) => {
+        setCurrentIndex(index); // Set the index of the clicked image
         setOpen(true);
     };
+
+    const slides = album?.images?.map((image) => ({
+        src: `http://localhost:8001/uploads/${image.replace(/\\/g, '/')}`,
+    }));
 
     return (
         <div className="mx-20 px-10 py-10">
@@ -45,7 +49,7 @@ const ImagesView = () => {
                                             src={`http://localhost:8001/uploads/${image.replace(/\\/g, '/')}`}
                                             alt=""
                                             className="w-full object-cover cursor-pointer"
-                                            onClick={() => handleImageClick(image)}
+                                            onClick={() => handleImageClick(index)}
                                         />
                                     </div>
                                 </div>
@@ -55,8 +59,14 @@ const ImagesView = () => {
                         )}
                     </div>
 
-                    {selectedImage && (
-                        <Lightbox open={open} close={() => setOpen(false)} slides={[{ src: selectedImage }]} />
+                    {slides && slides.length > 0 && (
+                        <Lightbox
+                            open={open}
+                            close={() => setOpen(false)}
+                            slides={slides} // Pass all slides to the Lightbox
+                            index={currentIndex} // Set the initial index
+                            onIndexChange={(index) => setCurrentIndex(index)} // Update index on navigation
+                        />
                     )}
                 </>
             ) : (

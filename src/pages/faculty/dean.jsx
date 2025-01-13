@@ -1,5 +1,5 @@
 import React from "react";
-import dean from "../../assets/faculty/dean.webp";
+import dean from "../../assets/dean.png";
 
 const FacultyDean = () => {
     return(

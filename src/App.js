@@ -1,12 +1,11 @@
 import React from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import PublicRoutes from "./routes/public.route";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 
 const AppContent = () => {
   const location = useLocation();
-
 
   const isHomePage = location.pathname === "/";
 
@@ -24,11 +23,7 @@ const AppContent = () => {
 };
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <AppContent />
-    </BrowserRouter>
-  );
+  return <AppContent />;
 };
 
 export default App;
